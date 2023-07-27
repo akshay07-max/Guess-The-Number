@@ -1,0 +1,83 @@
+.container {
+    /* height: 100vh;
+     width: 100vw; */
+     justify-content: center;
+     /* display: inline-block; */
+ }
+
+ .containt {
+     /* height: 50vh;
+     /* width: 100vw; */
+     /* min-width: fit-content; */
+     align-items: center;
+     justify-content: center;
+ }
+
+
+ .navbar {
+     /* height: 10vh;
+     width: 97vw; */
+     /* min-width: fit-content; */
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(235, 181, 110);
+     border-radius: 0.6em;
+     padding: 0em 0.1em;
+     margin: 0.5em 1em;
+     font-family: 'Roboto Slab', serif;
+
+
+ }
+
+
+
+ .navbar ul {
+     overflow: auto;
+ }
+
+ .navbar li {
+     float: left;
+     list-style: none;
+     padding: 0.5em 0.6em;
+     margin: 0.2em 1em;
+     font-size: 1.5rem;
+     justify-content: center;
+ }
+
+ .navbar li a {
+     text-decoration: none;
+     padding: 0.4em 0.4em;
+     color: rgb(20, 20, 21);
+ }
+
+ .navbar li a:hover {
+     background-color: rgb(163, 150, 150);
+     border-radius: 0.6em;
+ }
+
+ #btn {
+     margin: 0.8em 0.8em;
+     padding: 0.8em 0.8em;
+     float: right;
+     border: none;
+     border-radius: 0.3em;
+     background-color: rgb(167, 167, 213);
+     color: black;
+     cursor: pointer;
+ }
+
+ #search {
+     margin: 1em 0.8em;
+     padding: 0.7em 0.7em;
+     float: right;
+     border-radius: 1em;
+     text-align: left;
+     font-size: 0.8em;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .navbar input {
+     border: 2px solid green;
+     padding: 0.1em 0.4em;
+ }

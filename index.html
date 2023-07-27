@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making Simple Game With Python|Source Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <style>
+        #head0 {
+            text-align: center;
+            margin: 2em 0em;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+        #head0:hover {
+            color: rgb(24, 63, 180);
+        }
+
+        #head {
+
+            margin: 2em 1.8em;
+            font-size: 2.5rem;
+            color: rgb(72, 67, 67);
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #head1 {
+            font-size: 2.5rem;
+            color: rgb(72, 67, 67);
+            text-align: center;
+            margin: 2em 0em;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #head2 {
+            font-size: 2.5rem;
+            color: rgb(72, 67, 67);
+            text-align: center;
+            margin: 2em 0em;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+
+        }
+
+
+        .para {
+            font-size: 1.7rem;
+            margin: 2px 1.8px;
+            line-height: 2em;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        #image {
+            box-shadow: 20px 20px 20px rgb(47, 45, 45);
+            margin: 6em 0em;
+            width: 75%;
+            /* justify-content: center; */
+            position: relative;
+            align-items: center;
+            justify-content: center;
+
+
+
+        }
+
+        @media screen and (max-width: 800px) {
+
+            .left,
+            .main,
+            .right {
+                width: 100%;
+                /* @media (max-width:300px){
+            .container{
+                display: block;
+            }
+        } @media (max-width:300px){
+            .container{
+                display: block;
+            }
+        } @media (max-width:300px){
+            .container{
+                display: block;
+            }
+        } @media (max-width:300px){
+            .container{
+                display: block; */
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Source-Code.html">Source Code</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <div class="search">
+                        <button id="btn" type="submit"><i class="fa fa-search"></i></button>
+                        <input type="text" id="search" name="search" placeholder="Search">
+                    </div>
+                </ul>
+            </nav>
+        </header>
+
+        <head>
+            <h1 id="head0" class="" onmouseover="change()">~~~ Guess The Number ~~~</h1>
+        </head>
+
+        <div class="containt">
+            <h2 id="head">Python Random Module</h2>
+            <p class="para">Open terminal and write "pip install random" <br>
+                Python Random module is an in-built module of Python which is used to generate
+                random
+                numbers. <br> These are pseudo-random numbers means these are not truly random. <br>
+                This module can be used to perform random actions such as generating random numbers,
+                print random a value for a list or string, etc
+            </p>
+
+            <h1 id="head1">About Game</h1>
+            <p class="para">The game is two-person game called "Guess the Number". <br> The first
+                player
+                thinks of an integer within a known range. <br> The second player tries to guess the
+                number. <br> If the guess is incorrect, then the first player tells the second
+                player
+                whether the guess was too high or too low.</p>
+
+            <h1 id="head2">Game is looks like</h1>
+            <p class="para">
+                Enter Your Guess :67 <br>
+                You Gessed It Worng! Please Enter A Smaller Number<br>
+                Enter Your Guess :45<br>
+                You Gessed It Worng! Please Enter A Smaller Number<br>
+                Enter Your Guess :30<br>
+                You Guessed it Worng! Please Enter A Larger Number<br>
+                Enter Your Guess :35<br>
+                You Guessed it Worng! Please Enter A Larger Number<br>
+                Enter Your Guess :38<br>
+                You Guessed it Worng! Please Enter A Larger Number<br>
+                Enter Your Guess :43<br>
+                You Gessed It Worng! Please Enter A Smaller Number<br>
+                Enter Your Guess :42<br>
+                You Gessed It Worng! Please Enter A Smaller Number<br>
+                Enter Your Guess :41<br>
+                You Gessed It Worng! Please Enter A Smaller Number<br>
+                Enter Your Guess :40<br>
+                You Guessed Right!<br>
+                You Guessed The Number in 9 guesses
+
+                <img id="image" src="Screenshot (42).png" alt="Loading...">
+            </p>
+        </div>
+    </div>
+
+
+
+    <script>
+        function change() {
+            setInterval(function() {
+            document.getElementById("head0").style.color = "red"
+            }, 3000);
+            
+        }
+        
+        
+    </script>
+</body>
+
+</html>
